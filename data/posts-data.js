@@ -4,7 +4,7 @@ var local_database = [
 
 //
   {
-	  
+	  //这是一个测试
 	  
     date: "Sep 18 2016",
     title: "正是虾肥蟹壮时",

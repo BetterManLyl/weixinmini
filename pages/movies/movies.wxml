@@ -1,0 +1,20 @@
+<!--pages/movies/movies.wxml-->
+<import src="movie-list/movielist.wxml" />
+<import src="movie-grid-template/movie-grid-template.wxml" />
+
+<view class='search'>
+  <icon class='icon_search' size='13' type='search'></icon>
+  <input class='input' placeholder='战狼，英伦对决' type='text' placeholder-class='placeholder' bindfocus='onBindFoucus' bindchange="onBindChange" bindblur='bindblur' value='{{searchInput}}'></input>
+  <image class='cancel-img' wx:if="{{cancelImage}}" src='/image/icon/xx.png' bindtap='onCancel'></image>
+</view>
+
+<view class='movielistcontainer' wx:if="{{conntainerShow}}" >
+  <!--  data="{{movies}}"   对应的是 .js文件里面的  this.setData({movies:movies})-->
+  <template is="movieListTemplate" data="{{...inTheaters}}" />
+  <template is="movieListTemplate" data="{{...beAboutToMovie}}" />
+  <template is="movieListTemplate" data="{{...top250}}" />
+</view>
+
+<view class='search-pannel' wx:if="{{searchPannelShow}}">
+  <template is="gridTemplate" data="{{...searchResult}}" />
+</view>

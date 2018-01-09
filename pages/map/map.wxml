@@ -1,0 +1,7 @@
+<!--pages/map/map.wxml-->
+
+<map 
+scale='16' longitude='{{longitude}}' latitude='{{latitude}}' markers="{{markers}}" style="width: 100%; height: 500px;" bindmarkertap='markTap' show-location="{{false}}" circles='{{circles}}' polyline='{{polyline}}' controls='{{controls}}'
+bindcontroltap="controltap"
+>
+</map>

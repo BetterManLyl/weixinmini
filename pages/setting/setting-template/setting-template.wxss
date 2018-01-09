@@ -1,0 +1,18 @@
+.content {
+  margin-left: 20rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.horizontal {
+  width: 100%;
+  height: 1px;
+  background: #f2f2f2;
+}
+.templateContainter{
+  
+}
+.templateContainterhover{
+   background-color: #f2f2f2;
+}

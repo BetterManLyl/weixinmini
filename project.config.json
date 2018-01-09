@@ -1,0 +1,10 @@
+{
+	"client": "",
+	"libVersion": "1.6.0",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": false,
+		"minified": true
+	}
+}

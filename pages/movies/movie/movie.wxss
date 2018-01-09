@@ -1,0 +1,22 @@
+@import "../stars/stars.wxss";
+
+.movieContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22rpx;
+}
+
+.movieimage {
+  height: 270rpx;
+  width: 200rpx;
+  padding-bottom: 20rpx;
+}
+
+.movietext {
+  margin-bottom: 16rpx;
+  font-size: 30rpx;
+}
+
+.hover-class {
+  background-color: 'red';
+}

@@ -1,0 +1,89 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <view>
+    <text catchtap='click' class="{{color}}">hello</text>
+    <text>hello2</text>
+  </view>
+  <view bindtap='clickme'> 点击我</view>
+  <view>{{test}}</view>
+  <!--wxml-->
+  <view wx:if="{{data == 'WEBVIEW'}}"> WEBVIEW </view>
+  <view wx:elif="{{data == 'APP'}}"> APP </view>
+  <view wx:else="{{data == 'MINA'}}"> MINA </view>
+
+  <view bindtap='add'>{{count}}</view>
+  <view>{{a+b}}+{{c}} </view>
+
+  <view wx:if="{{length>5}}"> {{length}}</view>
+  <view wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </view>
+  <view wx:for="{{[1,2,3]}} ">
+    {{item}}
+  </view>
+
+  <view wx:for="{{array}}">
+    {{index}}: {{item.message}}
+  </view>
+  <block wx:for="{{[1, 2, 3]}}">
+    <view> {{index}}: </view>
+    <view> {{item}} </view>
+  </block>
+  <!--九九乘法表-->
+  <!-- <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+    <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+      <view wx:if="{{i <= j}}">
+        {{i}} * {{j}} = {{i * j}}
+      </view>
+    </view>
+  </view> -->
+  <view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+    {{idx}}: {{itemName.message}}
+  </view>
+  <view wx:for="array">
+    {{index}} :{{item}}
+  </view>
+  <view wx:if="{{condition}}"> True </view>
+
+  <template name="msgItem">
+    <view>
+      <text> {{index}}: {{msg}} </text>
+      <text> Time: {{time}} </text>
+    </view>
+  </template>
+
+  <template is="msgItem" data="{{...item}}" />
+  <view style="color:{{color}}" id='tapTest' bindtap='tapName' data-hi='ggg' data-in='WeChat'>Click Me!</view>
+  <audio src='{{src}}' id='myAudio'>
+
+  </audio>
+  <button bindtap='playMusic'>播放音乐</button>
+  <button bindtap='pauseMusic'>暂停音乐</button>
+  <button bindtap='pause14Music'>设置当前音乐为14s</button>
+  <button bindtap='resetMusic' class='textColor'>回到开头</button>
+  <video src="{{src}}" style='section'></video>
+  <button bindtap='videoPlay'>播放视频</button>
+  <view>
+    <video id="myVideo" src="http://vt3.doubanio.com/201710111729/157ed4881995d6e0ec3a3068fbf011f6/view/movie/M/302210371.mp4"
+      enable-danmu danmu-btn controls></video>
+    <view class="btn-area">
+      <input bindblur="bindInputBlur" />
+      <button bindtap="bindSendDanmu">发送弹幕</button>
+    </view>
+  </view>
+  <button bindtap='saveFile'>保存到本地文件</button>
+  <button bindtap='getSaveList'>得到本地保存的文件列表</button>
+  <text bindtap='countClick'>你点击了{{count}}次</text>
+  <view class='motainer_container'>
+    第一个块级元素
+  </view>
+</view>

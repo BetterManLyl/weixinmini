@@ -1,0 +1,29 @@
+<!--pages/posts/post-detail/post-detail.wxml-->
+<!--先静后动，先样式再数据-->
+<!--引用布局-->
+<import src="/pages/posts/post-item/post-item.wxml" />
+<view>
+  <swiper class='swiper-item' indicator-dots="true" indicator-active-color="#fff" autoplay="true" interval="2000"  vertical='{{false}}' catchtap='swiper'>
+    <!--注意设置成false要加上{{}}-->
+    <swiper-item>
+      <image src='/image/xiaolong.jpg' class='swiper-item' data-postid='3' ></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/image/post/bl.png' class='swiper-item' data-postid='4' ></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/image/iqiyi.png' class='swiper-item' data-postid='5' ></image>
+    </swiper-item>
+  </swiper>
+ 
+
+  <block wx:for="{{postkey}}" wx:for-item="item" wx:for-index="ids">
+    <!--template-->
+    <!--在item前面加 ... 相当于将对象进行展开，就不需要在template进行item.key了-->
+    <!--把template包裹在view里面进行点击事件-->
+    <!-- data-  加一个自定义单词表示自定义属性  必须以data-开头 绑定数据  -->
+    <view catchtap="onPost" data-postId='{{item.postId}}' >
+      <template is="postItem" data="{{...item}}"/>
+    </view>
+  </block>
+</view>

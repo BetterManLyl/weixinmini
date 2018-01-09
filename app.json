@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    
+    "pages/posts/posts",
+    "pages/index/index",
+    "pages/test/test",
+    "pages/posts/post-detail/post-detail",
+    "pages/movies/movies",
+    "pages/movies/movie-more/movie-more",
+    "pages/movies/movie-detail/movie-detail",
+    "pages/setting/setting",
+    "pages/map/map",
+    "pages/canvas/canvas"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": "20rpx",
+    "enablePullDownRefresh": false
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downLoadFile": 5000
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "#F3F3F3",
+  
+    "list": [
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "阅读",
+        "iconPath": "image/tab/ciwei.png",
+        "selectedIconPath": "image/tab/ciwei_hl.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "image/tab/dianying.png",
+        "selectedIconPath": "image/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "设置",
+        "iconPath": "image/tab/yuedu.png",
+        "selectedIconPath": "image/tab/yuedu_hl.png"
+      }
+      
+    ]
+  },
+  "debug": "true"
+}

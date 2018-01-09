@@ -1,0 +1,104 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-image {
+  width: 750rpx;
+  height: 460rpx;
+}
+
+.author-data {
+  flex-direction: row;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.author-image {
+  height: 64rpx;
+  width: 64rpx;
+  vertical-align: middle;
+}
+
+.author {
+  font-size: 30rpx;
+  font-weight: 300;
+  margin-left: 20rpx;
+  vertical-align: middle;
+  color: #666;
+}
+
+.const-text {
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+}
+
+.date {
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 30rpx;
+  vertical-align: middle;
+}
+
+.title {
+  font-size: 30rpx;
+  color: #999;
+  margin-left: 40rpx;
+  vertical-align: middle;
+  letter-spacing: 2rpx;
+  color: #4b556c;
+  font-weight: 600;
+}
+
+.tool {
+  margin-top: 20rpx;
+}
+
+.circle-img {
+  float: right;
+  margin-right: 40rpx;
+  vertical-align: middle;
+}
+
+.share-img {
+  margin-left: 30rpx;
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.horizon {
+  width: 600rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+  top: 46rpx;
+  margin: 0 auto;
+  z-index: -99;
+}
+
+.detail {
+  color: #666;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  line-height: 44rpx;
+  letter-spacing: 2px;
+  font-size: 28rpx
+}
+
+.audio {
+  width: 102rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  top:180rpx;
+  opacity: 0.6;
+}
+page {
+  height: 100%;
+  background-color: #b3d4db;
+}
+

@@ -1,0 +1,31 @@
+<!--pages/setting/setting.wxml-->
+<import src="setting-template/setting-template.wxml" />
+
+<view>
+
+  <view class='userinfo'>
+    <image src='{{userInfo.avatarUrl}}' class='settingImg'></image>
+    <view class='userDetail'>
+      <text class='textuserinfo'>姓名:{{userInfo.nickName}}</text>
+      <text class='textuserinfo'>性别:{{userInfo.gender==1?"男":"女"}}</text>
+      <text class='textuserinfo'>地址:{{userInfo.city}}</text>
+    </view>
+
+  </view>
+
+
+  <view class='template'>
+    <block wx:for="{{contentArray}}" >
+      <template is="settingTemplate" data="{{index,item}}"/>
+    </block>
+  </view>
+  
+ 
+    <view bindtap='share' class='xianclass'>
+
+      <button class='button' open-type='share' hover-class='button-hover' hover-stay-time='150'> 分享</button>
+      <view class='xian'></view>
+    </view>
+  
+
+</view>

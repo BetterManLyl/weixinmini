@@ -1,0 +1,19 @@
+/* pages/posts/post-detail/post-detail.wxss */
+/*引用样式*/
+@import 'post-item/post-item.wxss';
+.swiper {
+  width: 100%;
+  height: 500rpx;
+}
+
+.swiper-item {
+  width: 100%;
+  height: 500rpx;
+}
+page {
+  height: 100%;
+  background-color: #b3d4db;
+}
+
+
+

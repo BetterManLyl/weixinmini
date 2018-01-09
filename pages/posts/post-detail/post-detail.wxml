@@ -1,0 +1,27 @@
+<!--pages/posts/post-detail/post-detail.wxml-->
+<!--先静后动，先样式再数据-->
+<view class='container1'>
+  <image src='{{postkey.headImgSrc}}' class='head-image'></image>
+  <image src="{{isPlay?'/image/music/music-start.png':'/image/music/music-stop.png'}}" catchtap='playMusic' class='audio' ></image>
+  <view class='author-data'>
+    <image class='author-image' src='{{postkey.avatar}}'></image>
+    <text class='author'>{{postkey.author}}</text>
+    <text class='const-text'>发表于</text>
+    <text class='date'>{{postkey.dateTime}}</text>
+  </view>
+  <text class='title'>{{postkey.title}}</text>
+  <view class='tool'>
+    <view class='circle-img'>
+    <!--使用三元运算  也可以使用  if else 进行判断-->
+      <image class='share-img' src="{{isCollected?'/image/icon/collection.png':'/image/icon/collection-anti.png'}}" bindtap='collection'> </image>
+      <image class='share-img' src='/image/icon/share.png' bindtap='share'></image>
+    </view>
+    <view class='horizon'></view>
+  </view>
+  <text class='detail'>{{postkey.detail}}</text>
+</view>  
+
+
+
+
+

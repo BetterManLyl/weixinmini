@@ -1,0 +1,19 @@
+<!--pages/posts/post-item/post-item.wxml-->
+<!--template模板 做到页面复用 需要指定一个 name 值-->
+<template name="postItem">
+  <view class='post-container'>
+    <view class='post-author'>
+      <image src='{{avatar}}' class='post-image2'></image>
+      <text class='post-data'>{{date}}</text>
+    </view>
+    <text class='post-title'>{{title}}</text>
+  </view>
+  <image src='{{imgSrc}}' class='post-image'></image>
+  <text class='post-content'>{{content}}</text>
+  <view>
+    <image class='post-like-image' src='/image/icon/chat.png'></image>
+    <text class='post-like-text'>{{reading}}</text>
+    <image class='post-like-image' src='/image/icon/chat1.png'></image>
+    <text class='post-like-text'>{{collection}}</text>
+  </view>
+</template>

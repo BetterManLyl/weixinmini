@@ -1,0 +1,6 @@
+<template name="settingTemplate">
+  <view class='templateContainter' bindtap='bindtap{{index}}' hover-class='templateContainterhover' hover-stay-time='200'>
+    <text class='content'>{{item}}</text>
+    <view class='horizontal'></view>
+  </view>
+</template>

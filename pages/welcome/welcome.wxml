@@ -1,5 +1,6 @@
 <!--pages/welcome/welcome.wxml-->
 <view class='container'>
+
   <!--添加  ..  保持路径准确-->
   <image src='/image/4.png' class='imagestyle'></image>
   <text class='textStyle'>{{text}} </text>

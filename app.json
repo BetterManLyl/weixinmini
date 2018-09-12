@@ -21,6 +21,7 @@
     "navigationBarTextStyle": "black",
     "onReachBottomDistance": "20rpx",
     "enablePullDownRefresh": false
+   
   },
   "networkTimeout": {
     "request": 10000,

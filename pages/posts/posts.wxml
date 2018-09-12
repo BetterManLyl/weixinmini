@@ -2,6 +2,7 @@
 <!--先静后动，先样式再数据-->
 <!--引用布局-->
 <import src="/pages/posts/post-item/post-item.wxml" />
+
 <view>
   <swiper class='swiper-item' indicator-dots="true" indicator-active-color="#fff" autoplay="true" interval="2000"  vertical='{{false}}' catchtap='swiper'>
     <!--注意设置成false要加上{{}}-->

@@ -1,10 +1,14 @@
 {
 	"client": "",
-	"libVersion": "1.6.0",
+	"libVersion": "1.9.90",
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
 		"postcss": false,
-		"minified": true
-	}
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wx9e20f901627884d2",
+	"projectname": "demo",
+	"condition": {}
 }
